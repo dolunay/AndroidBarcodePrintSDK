@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val printFragment: Fragment = PrintFragment.newInstance()
         printFragment.arguments = Bundle().apply {
             putString(PrintFragment.BARCODE_KEY, "2019040101")
-            putBoolean(PrintFragment.SHOULD_DRAW_LOGO_KEY, true)
+            putBoolean(PrintFragment.SHOULD_DRAW_LOGO_KEY, false)
         }
         transaction.replace(R.id.container, printFragment)
         transaction.commit()
